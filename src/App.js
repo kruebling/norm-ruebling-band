@@ -1,48 +1,42 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Tabletop from 'tabletop';
 
 class App extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
       data: []
-    }
+    };
   }
 
   componentDidMount() {
     Tabletop.init({
-      key: '1q7SX8vPcxu8ezNTuIUoYsxTFHh-Gu7TJJ4aUsgIEtm8',
+      key: "1q7SX8vPcxu8ezNTuIUoYsxTFHh-Gu7TJJ4aUsgIEtm8",
       callback: googleData => {
         this.setState({
           data: googleData
-        })
+        });
       },
       simpleSheet: true
-    })
+    });
   }
 
   render() {
-    const { data } = this.state
+    const { data } = this.state;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">React + Google Sheets Demo</h1>
-        </header>
-        <div id="employee-details">
-          {
-            data.map(obj => {
-              return (
-                <div key={obj.employee}>
-                  <p>{obj.employee}</p>
-                  <p>{obj.favDog}</p>
-                  <img alt={obj.favDog} src={obj.img} />
-                </div>
-              )
-            })
-          }
+        <div id="gig-list">
+          {data.map(obj => {
+            return (
+              <div key={obj.Date}>
+                <h1>{obj.Location}</h1>
+                <p>{obj.Date}</p>
+                <p>{obj.Type}</p>
+                <br />
+              </div>
+            );
+          })}
         </div>
       </div>
     );

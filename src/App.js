@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Route, HashRouter } from "react-router-dom";
+
 import AppNavBar from "./components/AppNavBar";
+
 import Home from "./pages/home";
 import Gallery from "./pages/gallery";
 import Schedule from "./pages/schedule";

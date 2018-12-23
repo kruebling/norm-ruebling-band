@@ -1,47 +1,26 @@
-import React, { Component } from 'react';
-import './App.css';
-import Navbar from "./components/Navbar";
-import Tabletop from 'tabletop';
+import React, { Component } from "react";
+import { Route, HashRouter } from "react-router-dom";
+import AppNavBar from "./components/AppNavBar";
+import Home from "./pages/home";
+import Gallery from "./pages/gallery";
+import Schedule from "./pages/schedule";
+import Reviews from "./pages/reviews";
+import Contact from "./pages/contact";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      data: []
-    };
-  }
-
-  componentDidMount() {
-    Tabletop.init({
-      key: "1q7SX8vPcxu8ezNTuIUoYsxTFHh-Gu7TJJ4aUsgIEtm8",
-      callback: googleData => {
-        this.setState({
-          data: googleData
-        });
-      },
-      simpleSheet: true
-    });
-  }
-
   render() {
-    const { data } = this.state;
-    return (
-      <div className="App">
-        <Navbar />
-        <div id="gig-list">
-          {data.map(obj => {
-            return (
-              <div key={obj.Date}>
-                <h1>{obj.Location}</h1>
-                <p>{obj.Date}</p>
-                <p>{obj.Type}</p>
-                <br />
-              </div>
-            );
-          })}
+    return <HashRouter>
+        <div>
+          <AppNavBar />
+          <div className="content">
+            <Route exact path="/" component={Home} />
+            <Route exact path="/gallery" component={Gallery} />
+            <Route exact path="/schedule" component={Schedule} />
+            <Route exact path="/reviews" component={Reviews} />
+            <Route exact path="/contact" component={Contact} />
+          </div>
         </div>
-      </div>
-    );
+      </HashRouter>;
   }
 }
 

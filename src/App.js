@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navbar from "./components/Navbar";
 import Tabletop from 'tabletop';
 
 class App extends Component {
@@ -26,6 +27,7 @@ class App extends Component {
     const { data } = this.state;
     return (
       <div className="App">
+        <Navbar />
         <div id="gig-list">
           {data.map(obj => {
             return (

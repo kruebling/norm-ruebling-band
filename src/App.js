@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Route, HashRouter } from "react-router-dom";
 
+import { MuiThemeProvider } from "@material-ui/core/styles";
+import theme from "./theme";
+
 import AppNavBar from "./components/AppNavBar";
 
 import Home from "./pages/home";
@@ -13,7 +16,7 @@ class App extends Component {
   render() {
     return( 
       <HashRouter>
-        <div>
+        <MuiThemeProvider theme={theme}>
           <AppNavBar />
           <div className="content container">
             <Route exact path="/" component={Home} />
@@ -22,7 +25,7 @@ class App extends Component {
             <Route exact path="/reviews" component={Reviews} />
             <Route exact path="/contact" component={Contact} />
           </div>
-        </div>
+        </MuiThemeProvider>
       </HashRouter>
     )
   }

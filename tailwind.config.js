@@ -167,10 +167,12 @@ module.exports = {
   */
 
   screens: {
-    'sm': '576px',
-    'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
+    'xs': '576px',
+    'sm': '768px',
+    'md': '992px',
+    'lg': '1200px',
+    'xl': '1440px',
+    'xxl': '1920px',
   },
 
 
@@ -955,8 +957,8 @@ module.exports = {
 
   plugins: [
     require('tailwindcss/plugins/container')({
-      // center: true,
-      // padding: '1rem',
+      center: true,
+      padding: '2rem',
     }),
   ],
 

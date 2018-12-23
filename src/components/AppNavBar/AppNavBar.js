@@ -25,10 +25,10 @@ const styles = {
 function AppNavBar(props) {
   const { classes } = props;
   return <div className={classes.root}>
-    <AppBar position="static">
+    <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
       <Toolbar>
         <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" />
-        <Typography variant="h6" color="inherit" className={classes.grow}>
+        <Typography variant="h6" className={classes.grow}>
           NORM RUEBLING BAND
         </Typography>
         <Button color="inherit">

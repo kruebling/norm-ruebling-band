@@ -9,10 +9,11 @@ import Contact from "./pages/contact";
 
 class App extends Component {
   render() {
-    return <HashRouter>
+    return( 
+      <HashRouter>
         <div>
           <AppNavBar />
-          <div className="content">
+          <div className="content container">
             <Route exact path="/" component={Home} />
             <Route exact path="/gallery" component={Gallery} />
             <Route exact path="/schedule" component={Schedule} />
@@ -20,7 +21,8 @@ class App extends Component {
             <Route exact path="/contact" component={Contact} />
           </div>
         </div>
-      </HashRouter>;
+      </HashRouter>
+    )
   }
 }
 

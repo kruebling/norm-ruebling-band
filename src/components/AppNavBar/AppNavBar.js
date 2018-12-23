@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -14,7 +14,8 @@ const styles = {
     flexGrow: 1
   },
   grow: {
-    flexGrow: 1
+    flexGrow: 1,
+    fontWeight: 900
   },
   menuButton: {
     marginLeft: -12,
@@ -25,40 +26,30 @@ const styles = {
 function AppNavBar(props) {
   const { classes } = props;
   return <div className={classes.root}>
-    <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
-      <Toolbar>
-        <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" />
-        <Typography variant="h6" className={classes.grow}>
-          NORM RUEBLING BAND
-        </Typography>
-        <Button color="inherit">
-          <NavLink exact to="/">
+      <AppBar position="static" style={{ background: "transparent", boxShadow: "none" }}>
+        <Toolbar>
+          <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" />
+          <Typography variant="h6" color="primary" className={classes.grow}>
+            NORM RUEBLING BAND
+          </Typography>
+          <Button disableRipple={true} component={Link} to="/" color="primary">
             HOME
-          </NavLink>
-        </Button>
-        <Button color="inherit">
-          <NavLink exact to="/gallery">
+          </Button>
+          <Button disableRipple={true} component={Link} to="/gallery" color="primary">
             GALLERY
-          </NavLink>
-        </Button>
-        <Button color="inherit">
-          <NavLink exact to="/schedule">
+          </Button>
+          <Button disableRipple={true} component={Link} to="/schedule" color="primary">
             SCHEDULE
-          </NavLink>
-        </Button>
-        <Button color="inherit">
-          <NavLink exact to="/reviews">
-            reviews
-          </NavLink>
-        </Button>
-        <Button color="inherit">
-          <NavLink exact to="/contact">
+          </Button>
+          <Button disableRipple={true} component={Link} to="/reviews" color="primary">
+            REVIEWS
+          </Button>
+          <Button disableRipple={true} component={Link} to="/contact" color="primary">
             CONTACT
-          </NavLink>
-        </Button>
-      </Toolbar>
-    </AppBar>
-  </div>;
+          </Button>
+        </Toolbar>
+      </AppBar>
+    </div>;
 }
 
 AppNavBar.propTypes = {

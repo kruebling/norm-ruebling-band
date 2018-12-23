@@ -5,6 +5,7 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
 
 import AppNavBar from "./components/AppNavBar";
+import Grid from "@material-ui/core/Grid";
 
 import Home from "./pages/home";
 import Gallery from "./pages/gallery";
@@ -14,20 +15,18 @@ import Contact from "./pages/contact";
 
 class App extends Component {
   render() {
-    return( 
-      <HashRouter>
+    return <HashRouter>
         <MuiThemeProvider theme={theme}>
           <AppNavBar />
-          <div className="content container">
+          <Grid className="content container">
             <Route exact path="/" component={Home} />
             <Route exact path="/gallery" component={Gallery} />
             <Route exact path="/schedule" component={Schedule} />
             <Route exact path="/reviews" component={Reviews} />
             <Route exact path="/contact" component={Contact} />
-          </div>
+          </Grid>
         </MuiThemeProvider>
-      </HashRouter>
-    )
+      </HashRouter>;
   }
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import LazyHero from "react-lazy-hero";
-import hero from "../../assets/img/hero.jpeg"
+import Hero from "../../assets/img/hero.jpeg"
 
 function AppHeroImage() {
   return(
@@ -11,7 +11,7 @@ function AppHeroImage() {
         parallaxOffset={15}
         minHeight='80vh'
         transitionDuration={600}
-        imageSrc={hero}
+        imageSrc={Hero}
       />
     </div>
   )

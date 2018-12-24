@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return <HashRouter>
         <MuiThemeProvider theme={theme}>
-          <AppNavBar />
+          <AppNavBar className="font-sans" />
           <AppHeroImage />
           <Grid className="content container">
             <Route exact path="/" component={Home} />

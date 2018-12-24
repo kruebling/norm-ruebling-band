@@ -5,7 +5,14 @@ import hero from "../../assets/img/hero.jpeg"
 function AppHeroImage() {
   return(
     <div>
-      <LazyHero imageSrc={hero} />
+      <LazyHero
+        color="#000033"
+        opacity={0.15}
+        parallaxOffset={15}
+        minHeight='80vh'
+        transitionDuration={600}
+        imageSrc={hero}
+      />
     </div>
   )
 }

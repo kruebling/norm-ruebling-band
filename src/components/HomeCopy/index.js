@@ -1,1 +1,1 @@
-export { default } from './HomeCopy.js'
+export { default } from './HomeCopy.jsx'

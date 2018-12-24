@@ -1,1 +1,1 @@
-export { default } from './Gallery.js';
+export { default } from './Gallery.jsx';

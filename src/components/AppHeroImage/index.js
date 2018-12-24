@@ -1,1 +1,1 @@
-export { default } from './AppHeroImage.js'
+export { default } from './AppHeroImage.jsx'

@@ -1,1 +1,1 @@
-export { default } from './NextShow.js'
+export { default } from './NextShow.jsx'

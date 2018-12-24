@@ -6,6 +6,7 @@ import theme from "./assets/theme";
 
 import AppNavBar from "./components/AppNavBar";
 import AppHeroImage from "./components/AppHeroImage";
+import AppFooter from "./components/AppFooter";
 import Grid from "@material-ui/core/Grid";
 
 import Home from "./pages/home";
@@ -27,6 +28,7 @@ class App extends Component {
             <Route exact path="/reviews" component={Reviews} />
             <Route exact path="/contact" component={Contact} />
           </Grid>
+          <AppFooter />
         </MuiThemeProvider>
       </HashRouter>;
   }

@@ -1,1 +1,1 @@
-export { default } from './AppNavBar.js'
+export { default } from './AppNavBar.jsx'

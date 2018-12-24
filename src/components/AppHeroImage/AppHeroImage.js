@@ -1,10 +1,11 @@
 import React from "react";
 import LazyHero from "react-lazy-hero";
+import hero from "../../assets/img/hero.jpeg"
 
 function AppHeroImage() {
   return(
     <div>
-      <LazyHero imageSrc="https://unsplash.it/2000/1000" />
+      <LazyHero imageSrc={hero} />
     </div>
   )
 }

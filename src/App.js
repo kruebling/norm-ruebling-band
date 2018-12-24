@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Route, HashRouter } from "react-router-dom";
 
 import { MuiThemeProvider } from "@material-ui/core/styles";
-import theme from "./theme";
+import theme from "./assets/theme";
 
 import AppNavBar from "./components/AppNavBar";
 import AppHeroImage from "./components/AppHeroImage";

@@ -28,7 +28,7 @@ function AppNavBar(props) {
           </Typography>
           <Button
             disableRipple={true}
-            style={{ backgroundColor: 'transparent', letterSpacing: 2.5, color: '#c1b182' }}
+            style={{ backgroundColor: 'transparent', letterSpacing: 2.5, color: '#d2b48c' }}
             component={Link}
             to="/"
             color="primary">
@@ -36,7 +36,7 @@ function AppNavBar(props) {
           </Button>
           <Button
             disableRipple={true}
-            style={{ backgroundColor: 'transparent', letterSpacing: 2.5, color: '#c1b182' }}
+            style={{ backgroundColor: 'transparent', letterSpacing: 2.5, color: '#d2b48c' }}
             component={Link}
             to="/gallery"
             color="primary">
@@ -44,7 +44,7 @@ function AppNavBar(props) {
           </Button>
           <Button
             disableRipple={true}
-            style={{ backgroundColor: 'transparent', letterSpacing: 2.5, color: '#c1b182' }}
+            style={{ backgroundColor: 'transparent', letterSpacing: 2.5, color: '#d2b48c' }}
             component={Link}
             to="/schedule"
             color="primary">
@@ -52,7 +52,7 @@ function AppNavBar(props) {
           </Button>
           <Button
             disableRipple={true}
-            style={{ backgroundColor: 'transparent', letterSpacing: 2.5, color: '#c1b182' }}
+            style={{ backgroundColor: 'transparent', letterSpacing: 2.5, color: '#d2b48c' }}
             component={Link}
             to="/reviews"
             color="primary">
@@ -60,7 +60,7 @@ function AppNavBar(props) {
           </Button>
           <Button
             disableRipple={true}
-            style={{ backgroundColor: 'transparent', letterSpacing: 2.5, color: '#c1b182' }}
+            style={{ backgroundColor: 'transparent', letterSpacing: 2.5, color: '#d2b48c' }}
             component={Link}
             to="/contact"
             color="primary">

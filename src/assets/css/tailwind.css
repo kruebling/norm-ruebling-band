@@ -3157,6 +3157,10 @@ table {
   font-size: 3rem;
 }
 
+.text-6xl {
+  font-size: 4rem;
+}
+
 .italic {
   font-style: italic;
 }
@@ -6125,6 +6129,10 @@ table {
 
   .xs\:text-5xl {
     font-size: 3rem;
+  }
+
+  .xs\:text-6xl {
+    font-size: 4rem;
   }
 
   .xs\:italic {
@@ -9098,6 +9106,10 @@ table {
     font-size: 3rem;
   }
 
+  .sm\:text-6xl {
+    font-size: 4rem;
+  }
+
   .sm\:italic {
     font-style: italic;
   }
@@ -12067,6 +12079,10 @@ table {
 
   .md\:text-5xl {
     font-size: 3rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 4rem;
   }
 
   .md\:italic {
@@ -15040,6 +15056,10 @@ table {
     font-size: 3rem;
   }
 
+  .lg\:text-6xl {
+    font-size: 4rem;
+  }
+
   .lg\:italic {
     font-style: italic;
   }
@@ -18011,6 +18031,10 @@ table {
     font-size: 3rem;
   }
 
+  .xl\:text-6xl {
+    font-size: 4rem;
+  }
+
   .xl\:italic {
     font-style: italic;
   }
@@ -20980,6 +21004,10 @@ table {
 
   .xxl\:text-5xl {
     font-size: 3rem;
+  }
+
+  .xxl\:text-6xl {
+    font-size: 4rem;
   }
 
   .xxl\:italic {

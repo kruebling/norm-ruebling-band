@@ -9,19 +9,85 @@ import Button from "@material-ui/core/Button";
 
 const styles = {
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   grow: {
     flexGrow: 1,
     fontWeight: 900,
     letterSpacing: 5
-  }
+  },
+  show: {
+    transform: 'translate(0, 0)',
+    transition: 'transform .5s',
+  },
+  hide: {
+    transform: 'translate(0, -70px)',
+    transition: 'transform .5s',
+  },
 };
 
-function AppNavBar(props) {
-  const { classes } = props;
-  return <div className={classes.root}>
-      <AppBar style={{ background: "rgba(255, 255, 255, 0)", boxShadow: "none" }}>
+class AppNavBar extends React.PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      shouldShow: null,
+    };
+
+    this.lastScroll = null;
+
+    this.handleScroll = this.handleScroll.bind(this);
+    // Alternatively, you can throttle scroll events to avoid
+    // updating the state too often. Here using lodash.
+    // this.handleScroll = _.throttle(this.handleScroll.bind(this), 100);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll, { passive: true });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    const lastScroll = window.scrollY;
+
+    if (lastScroll === this.state.lastScroll) {
+      return;
+    }
+
+    const shouldShow =
+      this.lastScroll !== null ? lastScroll < this.lastScroll : null;
+
+    if (shouldShow !== this.state.shouldShow) {
+      this.setState(prevState => ({
+        ...prevState,
+        shouldShow,
+      }));
+    }
+
+    this.lastScroll = lastScroll;
+  }
+
+  getScrollClassName() {
+    if (this.state.shouldShow === null) {
+      return '';
+    }
+
+    return this.state.shouldShow
+      ? this.props.classes.show
+      : this.props.classes.hide;
+  }
+
+  render() {
+    const { classes } = this.props;
+    return (
+      <AppBar
+        position="fixed"
+        style={{ background: "rgba(255, 255, 255, 0)", boxShadow: "none" }}
+        className={`${classes.root} ${this.getScrollClassName()}`}
+      >
         <Toolbar disableGutters={true} className="container h-20">
           <Typography variant="h5" color="primary" className={classes.grow}>
             NORM RUEBLING BAND
@@ -68,11 +134,12 @@ function AppNavBar(props) {
           </Button>
         </Toolbar>
       </AppBar>
-    </div>;
+    );
+  }
 }
 
 AppNavBar.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(AppNavBar);

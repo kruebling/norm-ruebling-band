@@ -27,9 +27,9 @@ class NextShow extends Component {
     const { data } = this.state;
     let currentShow = data.slice(0, 1);
     return <div className="NextShow mb-12">
-        <h1 className="text-6xl font-black font-sans mb-12">NEXT SHOW</h1>
+        <h1 className="text-6xl font-black font-sans my-12">NEXT SHOW</h1>
         <Grid container>
-          <Grid item className="w-3/5">
+          <Grid item className="w-1/2">
             <img src={ShowHeader} className="show-header w-full h-80" alt="Show Header" />
           </Grid>
           <Grid item>
@@ -42,10 +42,11 @@ class NextShow extends Component {
                       </h1>
                     </Grid>
                     <Grid item className="flex items-center">
-                      <h4 className="uppercase tracking-wide pl-2 font-sans font-black">{obj.Month}</h4>
+                      <h4 className="uppercase tracking-xl pl-2 font-sans font-black">{obj.Month}</h4>
                     </Grid>
                   </Grid>
-                  <h1 className="text-tan ml-10 mt-5">{obj.Location}</h1>
+                  <h1 className="text-tan font-sans font-thin italic text-5xl ml-10 mt-5">{obj.Location}</h1>
+                  <h4 className="text-gray-dk font-sans font-thin text-lg ml-10 mt-4">{obj.Time}</h4>
                 </div>;
             })}
           </Grid>

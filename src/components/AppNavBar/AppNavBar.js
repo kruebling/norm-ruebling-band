@@ -18,10 +18,10 @@ const styles = {
   },
   show: {
     transform: 'translate(0, 0)',
-    transition: 'transform .5s',
+    transition: 'transform .4s',
   },
   hide: {
-    transform: 'translate(0, -70px)',
+    transform: 'translate(0, -80px)',
     transition: 'transform .5s',
   },
 };
@@ -88,7 +88,7 @@ class AppNavBar extends React.PureComponent {
         style={{ background: "rgba(255, 255, 255, 0)", boxShadow: "none" }}
         className={`${classes.root} ${this.getScrollClassName()}`}
       >
-        <Toolbar disableGutters={true} className="container h-20">
+        <Toolbar disableGutters={true} className="container">
           <Typography variant="h5" color="primary" className={classes.grow}>
             NORM RUEBLING BAND
           </Typography>

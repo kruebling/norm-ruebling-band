@@ -4,17 +4,28 @@ export default createMuiTheme({
   typography: {
     useNextVariants: true,
     fontFamily: [
-      '-apple-system',
-      'BlinkMacSystemFont',
+      "-apple-system",
+      "BlinkMacSystemFont",
       '"Segoe UI"',
-      'Roboto',
+      "Roboto",
       '"Helvetica Neue"',
-      'Arial',
-      'sans-serif',
+      "Arial",
+      "sans-serif",
       '"Apple Color Emoji"',
       '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(','),
+      '"Segoe UI Symbol"'
+    ].join(",")
+  },
+  mixins: {
+    toolbar: {
+      minHeight: 80,
+      "@media (min-width:0px) and (orientation: landscape)": {
+        minHeight: 60
+      },
+      "@media (min-width:600px)": {
+        minHeight: 80
+      }
+    }
   },
   palette: {
     primary: {

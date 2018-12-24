@@ -46,6 +46,9 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'tan': '#c1b182',
   'primary': '#ffd549',
+  'gray': '#bfbfbf',
+  'gray-dk': '#7b7d7b',
+  'gray-lt': '#dfdfdf'
 }
 
 module.exports = {
@@ -136,9 +139,9 @@ module.exports = {
       'Lucida Serif',
       'Lucida',
       'DejaVu Serif',
+      'Georgia',
       'Bitstream Vera Serif',
       'Liberation Serif',
-      'Georgia',
       'serif',
     ],
     'mono': [
@@ -252,6 +255,7 @@ module.exports = {
     'tight': '-0.05em',
     'normal': '0',
     'wide': '0.05em',
+    'xl': '0.125em',
   },
 
 

@@ -5,6 +5,7 @@ class Home extends Component {
   render() {
     return (
       <div>
+        <hr className="h-px bg-gray-lt w-full" />
         <NextShow />
       </div>
     );

@@ -5,7 +5,6 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 import theme from "./assets/theme";
 
 import AppNavBar from "./components/AppNavBar";
-import AppHeroImage from "./components/AppHeroImage";
 import AppFooter from "./components/AppFooter";
 import Grid from "@material-ui/core/Grid";
 
@@ -20,8 +19,7 @@ class App extends Component {
     return <HashRouter>
         <MuiThemeProvider theme={theme}>
           <AppNavBar />
-          <AppHeroImage />
-          <Grid className="content container">
+          <Grid>
             <Route exact path="/" component={Home} />
             <Route exact path="/gallery" component={Gallery} />
             <Route exact path="/schedule" component={Schedule} />

@@ -26,7 +26,7 @@ class NextShow extends Component {
   render() {
     const { data } = this.state;
     let currentShow = data.slice(0, 1);
-    return <div className="NextShow mb-12">
+    return <div className="NextShow content container mb-12">
         <h1 className="text-6xl font-black font-sans mb-12">NEXT SHOW</h1>
         <Grid container>
           <Grid item className="w-1/2">
@@ -37,16 +37,22 @@ class NextShow extends Component {
               return <div key={obj.Day}>
                   <Grid container className="pt-8 -ml-10">
                     <Grid item>
-                      <h1 className="bg-primary pr-2 py-4 w-32 font-sans text-right font-black">
+                      <h1 className="bg-primary shadow pr-2 py-4 w-32 font-sans text-right font-black">
                         {obj.Day}
                       </h1>
                     </Grid>
                     <Grid item className="flex items-center">
-                      <h4 className="uppercase tracking-xl pl-2 font-sans font-black">{obj.Month}</h4>
+                      <h4 className="uppercase tracking-xl pl-2 font-sans font-black">
+                        {obj.Month}
+                      </h4>
                     </Grid>
                   </Grid>
-                  <h1 className="text-tan font-sans font-thin italic text-5xl ml-10 mt-5">{obj.Location}</h1>
-                  <h4 className="text-gray-dk font-sans font-thin text-lg ml-10 mt-4">{obj.Time}</h4>
+                  <h1 className="text-tan font-sans font-hairline italic text-5xl ml-10 mt-5">
+                    {obj.Location}
+                  </h1>
+                  <h4 className="text-gray-dk font-sans font-light tracking-wide text-lg ml-10 mt-4">
+                    {obj.Time} - {obj.Type}
+                  </h4>
                 </div>;
             })}
           </Grid>

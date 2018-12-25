@@ -12,7 +12,7 @@ import MailIcon from "@material-ui/icons/Mail";
 function AppFooter() {
   return <StickyFooter bottomThreshold={9999} stickAtThreshold={0} normalStyles={{ backgroundColor: "#342d34", height: "22rem", padding: "2rem" }}>
       <div className="container pt-12 pb-4">
-        <h1 className="text-brown-lt font-sans font-thin italic text-4xl">
+        <h1 className="text-brown-lt font-sans font-hairline italic text-4xl">
           Norm Ruebling Band
         </h1>
         <hr className="h-px my-4 bg-brown-lt w-full" />

@@ -15,7 +15,7 @@ function AppHeroImage() {
         transitionDuration={600}
         imageSrc={Hero}
       >
-        <img className="container h-full mt-img ml-10 w-2/5" src={Norm} alt="Norm" />
+        <img className="container h-102 mt-img ml-10 w-2/5" src={Norm} alt="Norm" />
       </LazyHero>
     </div>
   )

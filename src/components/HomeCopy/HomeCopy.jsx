@@ -3,12 +3,12 @@ import React from "react";
 function HomeCopy() {
   return <div className="h-96">
       <div className="container flex justify-end">
-        <h1 className="text-tan font-sans font-thin italic text-5xl mr-copy mt-5">
+        <h1 className="text-tan font-sans font-hairline italic text-5xl mr-copy pt-10">
           You Want This Band
         </h1>
       </div>
       <div className="container flex justify-end h-80">
-        <p className="w-1/2 font-sans leading-normal text-gray-dk text-sm mr-12 pt-12 pr-20">
+        <p className="w-1/2 font-sans leading-normal text-gray-dk text-sm mr-12 pt-10 pr-24">
           If you've ever been to a celebration, maybe hit the dance floor,
           savored a delicious meal, or enjoyed your favorite drink with
           friends while listening to incredible "live" music in Mid-Missouri,

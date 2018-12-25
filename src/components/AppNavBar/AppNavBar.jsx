@@ -85,7 +85,7 @@ class AppNavBar extends React.PureComponent {
     return (
       <AppBar
         position="fixed"
-        style={{ background: "rgba(0, 0, 0, 0.5)", boxShadow: "none" }}
+        style={{ background: "rgba(0, 0, 0, 1)", boxShadow: "none" }}
         className={`${classes.root} ${this.getScrollClassName()}`}
       >
         <Toolbar disableGutters={true} className="container">

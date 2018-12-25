@@ -18,11 +18,11 @@ const styles = {
   },
   show: {
     transform: 'translate(0, 0)',
-    transition: 'transform .4s',
+    transition: 'all .4s',
   },
   hide: {
     transform: 'translate(0, -80px)',
-    transition: 'transform .5s',
+    transition: 'all .5s',
   },
 };
 
@@ -85,7 +85,7 @@ class AppNavBar extends React.PureComponent {
     return (
       <AppBar
         position="fixed"
-        style={{ background: "rgba(255, 255, 255, 0)", boxShadow: "none" }}
+        style={{ background: "rgba(0, 0, 0, 0.5)", boxShadow: "none" }}
         className={`${classes.root} ${this.getScrollClassName()}`}
       >
         <Toolbar disableGutters={true} className="container">

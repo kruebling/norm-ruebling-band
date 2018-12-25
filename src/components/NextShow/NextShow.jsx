@@ -27,7 +27,7 @@ class NextShow extends Component {
     const { data } = this.state;
     let currentShow = data.slice(0, 1);
     return <div className="NextShow mb-12">
-        <h1 className="text-6xl font-black font-sans my-12">NEXT SHOW</h1>
+        <h1 className="text-6xl font-black font-sans mb-12">NEXT SHOW</h1>
         <Grid container>
           <Grid item className="w-1/2">
             <img src={ShowHeader} className="show-header w-full h-80" alt="Show Header" />

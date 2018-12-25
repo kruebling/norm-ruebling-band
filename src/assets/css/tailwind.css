@@ -542,10 +542,6 @@ table {
   object-fit: cover;
 }
 
-.footer-icon {
-  stroke-width: .5;
-}
-
 .list-reset {
   list-style: none;
   padding: 0;
@@ -1548,6 +1544,10 @@ table {
   height: 20rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -1642,6 +1642,14 @@ table {
 
 .m-px {
   margin: 1px;
+}
+
+.m-copy {
+  margin: 17rem;
+}
+
+.m-img {
+  margin: 25rem;
 }
 
 .my-0 {
@@ -1802,6 +1810,26 @@ table {
 .mx-px {
   margin-left: 1px;
   margin-right: 1px;
+}
+
+.my-copy {
+  margin-top: 17rem;
+  margin-bottom: 17rem;
+}
+
+.mx-copy {
+  margin-left: 17rem;
+  margin-right: 17rem;
+}
+
+.my-img {
+  margin-top: 25rem;
+  margin-bottom: 25rem;
+}
+
+.mx-img {
+  margin-left: 25rem;
+  margin-right: 25rem;
 }
 
 .mt-0 {
@@ -2058,6 +2086,38 @@ table {
 
 .ml-px {
   margin-left: 1px;
+}
+
+.mt-copy {
+  margin-top: 17rem;
+}
+
+.mr-copy {
+  margin-right: 17rem;
+}
+
+.mb-copy {
+  margin-bottom: 17rem;
+}
+
+.ml-copy {
+  margin-left: 17rem;
+}
+
+.mt-img {
+  margin-top: 25rem;
+}
+
+.mr-img {
+  margin-right: 25rem;
+}
+
+.mb-img {
+  margin-bottom: 25rem;
+}
+
+.ml-img {
+  margin-left: 25rem;
 }
 
 .max-h-full {
@@ -4798,6 +4858,10 @@ table {
     height: 20rem;
   }
 
+  .xs\:h-96 {
+    height: 24rem;
+  }
+
   .xs\:h-auto {
     height: auto;
   }
@@ -4892,6 +4956,14 @@ table {
 
   .xs\:m-px {
     margin: 1px;
+  }
+
+  .xs\:m-copy {
+    margin: 17rem;
+  }
+
+  .xs\:m-img {
+    margin: 25rem;
   }
 
   .xs\:my-0 {
@@ -5052,6 +5124,26 @@ table {
   .xs\:mx-px {
     margin-left: 1px;
     margin-right: 1px;
+  }
+
+  .xs\:my-copy {
+    margin-top: 17rem;
+    margin-bottom: 17rem;
+  }
+
+  .xs\:mx-copy {
+    margin-left: 17rem;
+    margin-right: 17rem;
+  }
+
+  .xs\:my-img {
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+  }
+
+  .xs\:mx-img {
+    margin-left: 25rem;
+    margin-right: 25rem;
   }
 
   .xs\:mt-0 {
@@ -5308,6 +5400,38 @@ table {
 
   .xs\:ml-px {
     margin-left: 1px;
+  }
+
+  .xs\:mt-copy {
+    margin-top: 17rem;
+  }
+
+  .xs\:mr-copy {
+    margin-right: 17rem;
+  }
+
+  .xs\:mb-copy {
+    margin-bottom: 17rem;
+  }
+
+  .xs\:ml-copy {
+    margin-left: 17rem;
+  }
+
+  .xs\:mt-img {
+    margin-top: 25rem;
+  }
+
+  .xs\:mr-img {
+    margin-right: 25rem;
+  }
+
+  .xs\:mb-img {
+    margin-bottom: 25rem;
+  }
+
+  .xs\:ml-img {
+    margin-left: 25rem;
   }
 
   .xs\:max-h-full {
@@ -8033,6 +8157,10 @@ table {
     height: 20rem;
   }
 
+  .sm\:h-96 {
+    height: 24rem;
+  }
+
   .sm\:h-auto {
     height: auto;
   }
@@ -8127,6 +8255,14 @@ table {
 
   .sm\:m-px {
     margin: 1px;
+  }
+
+  .sm\:m-copy {
+    margin: 17rem;
+  }
+
+  .sm\:m-img {
+    margin: 25rem;
   }
 
   .sm\:my-0 {
@@ -8287,6 +8423,26 @@ table {
   .sm\:mx-px {
     margin-left: 1px;
     margin-right: 1px;
+  }
+
+  .sm\:my-copy {
+    margin-top: 17rem;
+    margin-bottom: 17rem;
+  }
+
+  .sm\:mx-copy {
+    margin-left: 17rem;
+    margin-right: 17rem;
+  }
+
+  .sm\:my-img {
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+  }
+
+  .sm\:mx-img {
+    margin-left: 25rem;
+    margin-right: 25rem;
   }
 
   .sm\:mt-0 {
@@ -8543,6 +8699,38 @@ table {
 
   .sm\:ml-px {
     margin-left: 1px;
+  }
+
+  .sm\:mt-copy {
+    margin-top: 17rem;
+  }
+
+  .sm\:mr-copy {
+    margin-right: 17rem;
+  }
+
+  .sm\:mb-copy {
+    margin-bottom: 17rem;
+  }
+
+  .sm\:ml-copy {
+    margin-left: 17rem;
+  }
+
+  .sm\:mt-img {
+    margin-top: 25rem;
+  }
+
+  .sm\:mr-img {
+    margin-right: 25rem;
+  }
+
+  .sm\:mb-img {
+    margin-bottom: 25rem;
+  }
+
+  .sm\:ml-img {
+    margin-left: 25rem;
   }
 
   .sm\:max-h-full {
@@ -11268,6 +11456,10 @@ table {
     height: 20rem;
   }
 
+  .md\:h-96 {
+    height: 24rem;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -11362,6 +11554,14 @@ table {
 
   .md\:m-px {
     margin: 1px;
+  }
+
+  .md\:m-copy {
+    margin: 17rem;
+  }
+
+  .md\:m-img {
+    margin: 25rem;
   }
 
   .md\:my-0 {
@@ -11522,6 +11722,26 @@ table {
   .md\:mx-px {
     margin-left: 1px;
     margin-right: 1px;
+  }
+
+  .md\:my-copy {
+    margin-top: 17rem;
+    margin-bottom: 17rem;
+  }
+
+  .md\:mx-copy {
+    margin-left: 17rem;
+    margin-right: 17rem;
+  }
+
+  .md\:my-img {
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+  }
+
+  .md\:mx-img {
+    margin-left: 25rem;
+    margin-right: 25rem;
   }
 
   .md\:mt-0 {
@@ -11778,6 +11998,38 @@ table {
 
   .md\:ml-px {
     margin-left: 1px;
+  }
+
+  .md\:mt-copy {
+    margin-top: 17rem;
+  }
+
+  .md\:mr-copy {
+    margin-right: 17rem;
+  }
+
+  .md\:mb-copy {
+    margin-bottom: 17rem;
+  }
+
+  .md\:ml-copy {
+    margin-left: 17rem;
+  }
+
+  .md\:mt-img {
+    margin-top: 25rem;
+  }
+
+  .md\:mr-img {
+    margin-right: 25rem;
+  }
+
+  .md\:mb-img {
+    margin-bottom: 25rem;
+  }
+
+  .md\:ml-img {
+    margin-left: 25rem;
   }
 
   .md\:max-h-full {
@@ -14503,6 +14755,10 @@ table {
     height: 20rem;
   }
 
+  .lg\:h-96 {
+    height: 24rem;
+  }
+
   .lg\:h-auto {
     height: auto;
   }
@@ -14597,6 +14853,14 @@ table {
 
   .lg\:m-px {
     margin: 1px;
+  }
+
+  .lg\:m-copy {
+    margin: 17rem;
+  }
+
+  .lg\:m-img {
+    margin: 25rem;
   }
 
   .lg\:my-0 {
@@ -14757,6 +15021,26 @@ table {
   .lg\:mx-px {
     margin-left: 1px;
     margin-right: 1px;
+  }
+
+  .lg\:my-copy {
+    margin-top: 17rem;
+    margin-bottom: 17rem;
+  }
+
+  .lg\:mx-copy {
+    margin-left: 17rem;
+    margin-right: 17rem;
+  }
+
+  .lg\:my-img {
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+  }
+
+  .lg\:mx-img {
+    margin-left: 25rem;
+    margin-right: 25rem;
   }
 
   .lg\:mt-0 {
@@ -15013,6 +15297,38 @@ table {
 
   .lg\:ml-px {
     margin-left: 1px;
+  }
+
+  .lg\:mt-copy {
+    margin-top: 17rem;
+  }
+
+  .lg\:mr-copy {
+    margin-right: 17rem;
+  }
+
+  .lg\:mb-copy {
+    margin-bottom: 17rem;
+  }
+
+  .lg\:ml-copy {
+    margin-left: 17rem;
+  }
+
+  .lg\:mt-img {
+    margin-top: 25rem;
+  }
+
+  .lg\:mr-img {
+    margin-right: 25rem;
+  }
+
+  .lg\:mb-img {
+    margin-bottom: 25rem;
+  }
+
+  .lg\:ml-img {
+    margin-left: 25rem;
   }
 
   .lg\:max-h-full {
@@ -17738,6 +18054,10 @@ table {
     height: 20rem;
   }
 
+  .xl\:h-96 {
+    height: 24rem;
+  }
+
   .xl\:h-auto {
     height: auto;
   }
@@ -17832,6 +18152,14 @@ table {
 
   .xl\:m-px {
     margin: 1px;
+  }
+
+  .xl\:m-copy {
+    margin: 17rem;
+  }
+
+  .xl\:m-img {
+    margin: 25rem;
   }
 
   .xl\:my-0 {
@@ -17992,6 +18320,26 @@ table {
   .xl\:mx-px {
     margin-left: 1px;
     margin-right: 1px;
+  }
+
+  .xl\:my-copy {
+    margin-top: 17rem;
+    margin-bottom: 17rem;
+  }
+
+  .xl\:mx-copy {
+    margin-left: 17rem;
+    margin-right: 17rem;
+  }
+
+  .xl\:my-img {
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+  }
+
+  .xl\:mx-img {
+    margin-left: 25rem;
+    margin-right: 25rem;
   }
 
   .xl\:mt-0 {
@@ -18248,6 +18596,38 @@ table {
 
   .xl\:ml-px {
     margin-left: 1px;
+  }
+
+  .xl\:mt-copy {
+    margin-top: 17rem;
+  }
+
+  .xl\:mr-copy {
+    margin-right: 17rem;
+  }
+
+  .xl\:mb-copy {
+    margin-bottom: 17rem;
+  }
+
+  .xl\:ml-copy {
+    margin-left: 17rem;
+  }
+
+  .xl\:mt-img {
+    margin-top: 25rem;
+  }
+
+  .xl\:mr-img {
+    margin-right: 25rem;
+  }
+
+  .xl\:mb-img {
+    margin-bottom: 25rem;
+  }
+
+  .xl\:ml-img {
+    margin-left: 25rem;
   }
 
   .xl\:max-h-full {
@@ -20973,6 +21353,10 @@ table {
     height: 20rem;
   }
 
+  .xxl\:h-96 {
+    height: 24rem;
+  }
+
   .xxl\:h-auto {
     height: auto;
   }
@@ -21067,6 +21451,14 @@ table {
 
   .xxl\:m-px {
     margin: 1px;
+  }
+
+  .xxl\:m-copy {
+    margin: 17rem;
+  }
+
+  .xxl\:m-img {
+    margin: 25rem;
   }
 
   .xxl\:my-0 {
@@ -21227,6 +21619,26 @@ table {
   .xxl\:mx-px {
     margin-left: 1px;
     margin-right: 1px;
+  }
+
+  .xxl\:my-copy {
+    margin-top: 17rem;
+    margin-bottom: 17rem;
+  }
+
+  .xxl\:mx-copy {
+    margin-left: 17rem;
+    margin-right: 17rem;
+  }
+
+  .xxl\:my-img {
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+  }
+
+  .xxl\:mx-img {
+    margin-left: 25rem;
+    margin-right: 25rem;
   }
 
   .xxl\:mt-0 {
@@ -21483,6 +21895,38 @@ table {
 
   .xxl\:ml-px {
     margin-left: 1px;
+  }
+
+  .xxl\:mt-copy {
+    margin-top: 17rem;
+  }
+
+  .xxl\:mr-copy {
+    margin-right: 17rem;
+  }
+
+  .xxl\:mb-copy {
+    margin-bottom: 17rem;
+  }
+
+  .xxl\:ml-copy {
+    margin-left: 17rem;
+  }
+
+  .xxl\:mt-img {
+    margin-top: 25rem;
+  }
+
+  .xxl\:mr-img {
+    margin-right: 25rem;
+  }
+
+  .xxl\:mb-img {
+    margin-bottom: 25rem;
+  }
+
+  .xxl\:ml-img {
+    margin-left: 25rem;
   }
 
   .xxl\:max-h-full {

@@ -46,6 +46,8 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'tan': '#c1b182',
   'primary': '#ffd549',
+  'brown-lt': '#75584b',
+  'gray-text': '#8b888b',
   'gray': '#bfbfbf',
   'gray-dk': '#7b7d7b',
   'gray-lt': '#dfdfdf'
